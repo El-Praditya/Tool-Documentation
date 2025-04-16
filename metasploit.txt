@@ -1,0 +1,16 @@
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+
+Upgrade shell msf6 menjadi shell interaktif penuh seperti di terminal linux pada umumnya
+
+ python3 -c : Menjalankan kode Python langsung dari command line.
+ import pty : Mengimpor modul PTY (Pseudo-Terminal) untuk membuat sesi terminal interaktif.
+ pty.spawn("/bin/bash") : Memulai sesi bash shell interaktif, sehingga terminal lebih responsif.
+
+#RHOST - IP Target
+#RPORT - Port Target
+#LHOST - IP Gw
+#LPORT - Port Gw
+
+# Cara mencari exploit
+search ms17-010 (nmap.txt)
+

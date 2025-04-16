@@ -1,0 +1,4 @@
+# Ini untuk berbagi file linux ke android atau windows
+
+1. Masuk ke folder yang akan dishare 
+2. python3 -m http.server 8080

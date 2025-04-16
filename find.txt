@@ -1,0 +1,10 @@
+# Cara mencari file
+
+find / -type f -name "flag.txt" 2>/dev/null
+ Penjelasan:
+
+/ : Cari di seluruh sistem (root directory).
+-type : → Hanya cari file (bukan folder).
+-name "flag.txt" : Cari file dengan nama persis flag.txt.
+2>/dev/null : Sembunyikan error permission agar hasilnya lebih bersih.
+

@@ -1,0 +1,4 @@
+# ffuf -u http://cyprusbank.thm/FUZZ -w /usr/share/wordlists/dirb/common.txt -mc 200,301,302
+-u: url
+-w: wordlist
+-mc: filter (hanya menampilkan 200,301,302)

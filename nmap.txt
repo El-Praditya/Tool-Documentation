@@ -1,0 +1,29 @@
+# CheatSheet NMAP
+	https://www.stationx.net/nmap-cheat-sheet/
+
+# nmap -v -sC -sV -A -O -p- -T5 -Pn 10.10.91.206
+
+-v : Verbose mode. Menampilkan info lebih banyak & Real-Time
+-sC : Default Script. Brute-Force ringan, cek versi TLS/SSL, Cek robots.txt
+-sV: Mendeteksi versi layanan yang berjalan di open port
+	(Mengetahui Ada berapa port yang open)
+### -A : Aggressive Scan. Mengaktifkan (otomatis) -O -sV traceroute -sC ###
+-O : OS Target
+-p- : Scan (Semua) Port. 65.535
+-T5 : Timing Lv. 5 (Insane).
+	T0 (Paranoid) → Sangat lambat, tidak terdeteksi IDS.
+	T1 (Sneaky) → Lambat, cocok untuk stealth scanning.
+	T2 (Polite) → Lebih lambat agar tidak mengganggu jaringan.
+	T3 (Normal - Default) → Kecepatan normal.
+	T4 (Aggressive) → Cepat, bisa terdeteksi IDS/IPS.
+	T5 (Insane) → Sangat cepat, berpotensi membuat server down atau kehilangan paket!
+-Pn : Memaksa Nmap tetap scanning meski host tidak merespon ping (icmp diblok)
+-sS : Syn Stealth Scan (kalo not shown reset)
+--open : Open Port Only
+
+
+# Scan VULN
+nmap -sV --script=vuln 12.54.24.68
+
+--script=vuln: Menjalankan skrip yang mendeteksi kerentanan
+

