@@ -1,0 +1,4 @@
+Tool untuk scan vulnerability (sistem komputer, jaringan, dan aplikasi)
+
+# Cara pakai
+Buka di WEB (Berbasis GUI)

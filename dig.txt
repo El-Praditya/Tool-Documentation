@@ -1,0 +1,1 @@
+# Bedanya sama nslookup, dig lebih advance. cocok buat explorasi mendalam

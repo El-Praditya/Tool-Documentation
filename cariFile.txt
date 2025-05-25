@@ -8,3 +8,8 @@ find / -type f -name "flag.txt" 2>/dev/null
 -name "flag.txt" : Cari file dengan nama persis flag.txt.
 2>/dev/null : Sembunyikan error permission agar hasilnya lebih bersih.
 
+# Cara mencari file "php.ini"
+find / -name "php.ini"
+
+# LOCATE
+locate antivirus.sh

@@ -1,0 +1,15 @@
+# Menyembunyikan domain berbahaya lewat layanan pemendek URL. Contoh pemendek link:
+bit.ly
+goo.gl
+ow.ly
+s.id
+smarturl.it
+tiny.pl
+tinyurl.com
+x.co
+
+# Melihat preview dari sebuah link(daripada asal klik link)
+	Tambahkan + di akhir link
+https://tinyurl.com/bw7t8p4u
+https://tinyurl.com/bw7t8p4u+
+hasilnya preview: https://tryhackme.com

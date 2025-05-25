@@ -1,0 +1,5 @@
+# Crack PASSWD yang pake encryption RSA
+1. file id_rsa_159....id_rsa
+2. id_rsa_1593558668558.id_rsa: PEM RSA private key
+3. python3 id_rsa_159....id_rsa > rsa_hash.txt
+4. john rsa_hash.tst --wordlist=/usr/share/wordlist/rockyou.txt

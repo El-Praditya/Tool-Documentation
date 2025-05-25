@@ -24,9 +24,5 @@ show options
 # Mengetahui username korban
 getuid
 
-# Cara background proses (Privileges Escalation)
-meterpreter > background
-[*] Backgrounding session 1... (Dia ada di sesi 1)
-
-# Rekomendasi exploit yang sesuai
-run post/multi/recon/local_exploit_suggester
+# Mengetahui Versi system
+sysinfo

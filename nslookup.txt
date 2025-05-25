@@ -1,0 +1,21 @@
+nslookup OPTIONS NAMA_DOMAIN SERVER
+nslookup -type=MX webmy.com 1.1.1.1
+# Keterangan:
+OPTIONS → digunakan untuk menentukan jenis query, seperti: | Query type | Hasil | |------------|-------| | A | Alamat IPv4 | | AAAA | Alamat IPv6 | | CNAME | Canonical Name (alias domain) | | MX | Mail Server | | SOA | Start of Authority | | TXT | TXT Records |
+
+NAMA_DOMAIN → domain yang mau kamu cari.
+
+SERVER → DNS server yang ingin kamu pakai buat query.
+Contoh DNS server publik:
+	Cloudflare: 1.1.1.1 atau 1.0.0.1
+	Google: 8.8.8.8 atau 8.8.4.4
+	Quad9: 9.9.9.9 atau 149.112.112.112
+
+###
+A : IPv4
+AAAA : IPv6
+CNAME : Canocial Name
+MX : Mail Server
+SOA : Start Of Authority
+TXT : TXT Records
+

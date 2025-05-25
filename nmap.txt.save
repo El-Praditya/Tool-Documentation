@@ -3,9 +3,9 @@ https://www.stationx.net/nmap-cheat-sheet/
 
 #-sL : Cek "range" ip target (Menampilkan IP daftar target)
 #-n  : Jangan resolve hostname (Hemat Waktu)
+-sn : nonaktifkan port scan (host online only)
 -v  : Verbose mode. Menampilkan info lebih banyak & Real-Time
 -sC : Default Script. Brute-Force ringan, cek versi TLS/SSL, Cek robots.txt
-	Bisa juga untuk identifikasi host
 -A  : Aggressive Scan. Mengaktifkan (otomatis) -O -sV traceroute -sC 
 -O  : OS Target
 -p- : Scan (Semua) Port. 65.535

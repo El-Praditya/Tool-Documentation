@@ -1,0 +1,23 @@
+# Cara crack hash biasa
+1. buat file yang berisi nilai hash
+2. hashcat -m 0 -a 0 hash.txt /usr/share/wordlist/rockyou.txt
+# INFO: All hashes found as potfile and/or empty entries! Use --show to display them.
+3. hashcat -m 0 -a 0 hash.txt --show
+
+# Cara crack hash + salt
+1. buat hash.txt yang berisi
+	hash:salt
+2. hashcat -m (jenis hash) -a 0 hash.txt /usr/share/wordlisc/rockyou.txt
+3. hasil akhir
+	hash:salt:hasil
+
+### -m itu jenis hashnya ###
+#	-m 0 : MD 5
+#	-m 100 : SHA1
+#	-m 1400 : SHA256
+#	-m 1710 : SHA512
+###			 ###
+
+
+#	-a 0 : attack mode "straight"/wordlist attack
+

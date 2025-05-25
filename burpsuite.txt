@@ -1,0 +1,3 @@
+# clusterbomb (bruteforce)
+passwd dan user diacak sampe bisa login 
+tidak perlu pake grep, tinggal isi payloadnya aja
